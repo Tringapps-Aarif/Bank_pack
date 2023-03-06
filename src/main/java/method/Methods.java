@@ -8,12 +8,12 @@ import details.*;
 
 public class Methods extends DetailsBank {
     Logger l =Logger.getLogger("method");
-    Scanner sc = new Scanner(System.in);
+    Scanner sc1 = new Scanner(System.in);
 
 
 
-    String name = sc.nextLine();
-    int  accno = sc.nextInt();
+    String name = sc1.nextLine();
+    int  accno = sc1.nextInt();
 
     public Methods(int accno, String name) {
         super(accno, name);
@@ -29,7 +29,7 @@ public class Methods extends DetailsBank {
     public void deposit() {
 
         l.info("Enter the Amount");
-        depAmt = sc.nextInt();
+        depAmt = sc1.nextInt();
         currentBalance = currentBalance + depAmt;
         getData();
 
@@ -37,7 +37,7 @@ public class Methods extends DetailsBank {
 
     public void widthDrawal() {
         l.info("Enter the you need to widthdraw");
-        wAmt = sc.nextInt();
+        wAmt = sc1.nextInt();
         currentBalance = currentBalance - wAmt;
         getData();
     }
