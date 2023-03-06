@@ -13,7 +13,7 @@ class BankPg {
 
 
 
-        Methods m = new Methods(0,"");
+        Methods obj = new Methods(0,"");
 
         while (choice != 3) {
 
@@ -21,10 +21,10 @@ class BankPg {
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    m.deposit();
+                    obj.deposit();
                     break;
                 case 2:
-                    m.widthDrawal();
+                    obj.widthDrawal();
                     break;
                 case 3:
                     System.exit(0);
