@@ -13,7 +13,7 @@ class BankPg {
 
 
 
-        Methods m = new Methods();
+        Methods m = new Methods(0,"");
 
         while (choice != 3) {
 

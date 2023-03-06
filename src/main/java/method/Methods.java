@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 import details.*;
 
-public class Methods {
+public class Methods extends DetailsBank {
     Logger l =Logger.getLogger("method");
     Scanner sc = new Scanner(System.in);
 
@@ -14,27 +14,31 @@ public class Methods {
 
     String name = sc.nextLine();
     int  accno = sc.nextInt();
-    DetailsBank a = new DetailsBank(accno,name);
 
-    public void getData() {
-        l.info("NAME:" + a.name);
-        l.info("ACCOUNT NUMBER:" + a.accno);
-        l.info("CURRENT BALANCE:" + a.currentBalance);
+    public Methods(int accno, String name) {
+        super(accno, name);
+    }
+
+
+    public  void getData() {
+        l.info("NAME:" + name);
+        l.info("ACCOUNT NUMBER:" + accno);
+        l.info("CURRENT BALANCE:" + currentBalance);
     }
 
     public void deposit() {
 
         l.info("Enter the Amount");
-        a.depAmt = sc.nextInt();
-        a.currentBalance = a.currentBalance + a.depAmt;
+        depAmt = sc.nextInt();
+        currentBalance = currentBalance + depAmt;
         getData();
 
     }
 
     public void widthDrawal() {
         l.info("Enter the you need to widthdraw");
-        a.wAmt = sc.nextInt();
-        a.currentBalance = a.currentBalance - a.wAmt;
+        wAmt = sc.nextInt();
+        currentBalance = currentBalance - wAmt;
         getData();
     }
 }
