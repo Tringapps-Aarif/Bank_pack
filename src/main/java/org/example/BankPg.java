@@ -7,7 +7,8 @@ import method.*;
 class BankPg {
     public static void main(String[] args) {
         Logger l =Logger.getLogger("Bankpg");
-        int accno, ch = 0;
+        int accno;
+        int ch = 0;
         String name;
         Scanner sc = new Scanner(System.in);
         l.info("Enter the Name and Account Number");
