@@ -2,6 +2,7 @@ package method;
 
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import details.*;
@@ -21,9 +22,10 @@ public class Methods extends DetailsBank {
 
 
     public  void getData() {
-        l.info("NAME:" + name);
-        l.info("ACCOUNT NUMBER:" + accno);
-        l.info("CURRENT BALANCE:" + currentBalance);
+        l.log(Level.INFO, () ->"name"+name);
+
+        l.log(Level.INFO, () ->"ACCOUNT NUMBER:" + accno);
+        l.log(Level.INFO, () ->"CURRENT BALANCE:" + currentBalance);
     }
 
     public void deposit() {
