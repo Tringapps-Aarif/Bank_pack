@@ -14,27 +14,27 @@ public class Methods {
 
     String name = sc.nextLine();
     int  accno = sc.nextInt();
-    DetailsBank A = new DetailsBank(accno,name);
+    DetailsBank a = new DetailsBank(accno,name);
 
     public void getData() {
-        l.info("NAME:" + A.name);
-        l.info("ACCOUNT NUMBER:" + A.accno);
-        l.info("CURRENT BALANCE:" + A.currentBalance);
+        l.info("NAME:" + a.name);
+        l.info("ACCOUNT NUMBER:" + a.accno);
+        l.info("CURRENT BALANCE:" + a.currentBalance);
     }
 
     public void deposit() {
 
         l.info("Enter the Amount");
-        A.depAmt = sc.nextInt();
-        A.currentBalance = A.currentBalance + A.depAmt;
+        a.depAmt = sc.nextInt();
+        a.currentBalance = a.currentBalance + a.depAmt;
         getData();
 
     }
 
     public void widthDrawal() {
         l.info("Enter the you need to widthdraw");
-        A.wAmt = sc.nextInt();
-        A.currentBalance = A.currentBalance - A.wAmt;
+        a.wAmt = sc.nextInt();
+        a.currentBalance = a.currentBalance - a.wAmt;
         getData();
     }
 }
