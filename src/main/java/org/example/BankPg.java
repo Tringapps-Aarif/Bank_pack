@@ -7,7 +7,7 @@ import method.*;
 class BankPg {
     public static void main(String[] args) {
         Logger l =Logger.getLogger("Bankpg");
-        int ch = 0;
+        int choice = 0;
         Scanner sc = new Scanner(System.in);
         l.info("Enter the Name and Account Number");
 
@@ -15,11 +15,11 @@ class BankPg {
 
         Methods M = new Methods();
 
-        while (ch != 3) {
+        while (choice != 3) {
 
             l.info("Enter your choice \n1.DEPOSIT \n2.WITHDRAW \n3.EXIT");
-            ch = sc.nextInt();
-            switch (ch) {
+            choice = sc.nextInt();
+            switch (choice) {
                 case 1:
                     M.deposit();
                     break;
