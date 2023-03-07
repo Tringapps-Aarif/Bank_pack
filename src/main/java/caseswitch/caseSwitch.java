@@ -7,9 +7,9 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class caseSwitch {
-    Logger l = Logger.getLogger("caseSwitch");
-    Scanner sc = new Scanner(System.in);
-    Methods obj = new Methods();
+    private  final  Logger l = Logger.getLogger("caseSwitch");
+    private  final  Scanner sc = new Scanner(System.in);
+   private Methods obj = new Methods();
    private int choice;
    public  void case1()
 
