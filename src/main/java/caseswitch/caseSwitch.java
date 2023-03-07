@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class caseSwitch {
     private  final  Logger l = Logger.getLogger("caseSwitch");
     private  final  Scanner sc = new Scanner(System.in);
-   private Methods obj = new Methods();
+   final Methods obj = new Methods();
    private int choice;
    public  void case1()
 
@@ -18,18 +18,10 @@ public class caseSwitch {
             l.info("Enter your choice \n1.DEPOSIT \n2.WITHDRAW \n3.EXIT");
             choice = sc.nextInt();
             switch (choice) {
-                case 1:
-                    obj.deposit();
-                    break;
-                case 2:
-                    obj.widthDrawal();
-                    break;
-                case 3:
-                    System.exit(0);
-                    break;
-                default:
-                    l.info("invalid choice");
-                    break;
+                case 1 -> obj.deposit();
+                case 2 -> obj.widthDrawal();
+                case 3 -> System.exit(0);
+                default -> l.info("invalid choice");
             }
         }
     }
