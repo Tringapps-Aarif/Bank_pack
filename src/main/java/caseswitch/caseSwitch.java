@@ -1,22 +1,20 @@
-package org.example;
-import java.util.*;
+package caseswitch;
+
+
+import method.Methods;
+
+import java.util.Scanner;
 import java.util.logging.Logger;
 
-import method.*;
+public class caseSwitch {
+    Logger l = Logger.getLogger("caseSwitch");
+    Scanner sc = new Scanner(System.in);
+    Methods obj = new Methods();
+   private int choice;
+   public  void case1()
 
-class BankPg {
-    public static void main(String[] args) {
-        Logger l =Logger.getLogger("Bankpg");
-        int choice = 0;
-        Scanner sc = new Scanner(System.in);
-        l.info("Enter the Name and Account Number");
-
-
-
-        Methods obj = new Methods(0,"");
-
+    {
         while (choice != 3) {
-
             l.info("Enter your choice \n1.DEPOSIT \n2.WITHDRAW \n3.EXIT");
             choice = sc.nextInt();
             switch (choice) {
@@ -34,7 +32,5 @@ class BankPg {
                     break;
             }
         }
-        sc.close();
-
     }
 }
