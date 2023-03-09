@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-class insufficientBalance extends Exception {
 
-}
 public class Methods {
     private final Logger print = Logger.getLogger("account");
     private final Scanner sc1 = new Scanner(System.in);
