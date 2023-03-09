@@ -1,7 +1,7 @@
 package caseswitch;
 
 
-import method.Methods;
+import account.Methods;
 
 import java.util.Scanner;
 import java.util.logging.Logger;

@@ -1,7 +1,7 @@
 package mainpkg;
 import java.util.Scanner;
 import caseswitch.*;
-import method.Methods;
+import account.Methods;
 import java.util.logging.Logger;
 public class BankPg {
     public static int n;

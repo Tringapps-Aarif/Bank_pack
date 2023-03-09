@@ -1,9 +1,9 @@
-package method;
+package account;
 
  class Details {
-        public int AccNo;
-       public  String nameUser;
-     public int currentBalance;
+        protected int AccNo;
+       protected  String nameUser;
+     protected int currentBalance;
         Details(int accno,String name,int currentBalance)
         {
             AccNo=accno;
