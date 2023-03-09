@@ -6,7 +6,7 @@ import account.Methods;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class caseSwitch {
+public class Caseswitch {
     private  final  Logger l = Logger.getLogger("caseSwitch");
     private  final  Scanner sc = new Scanner(System.in);
    final Methods obj = new Methods();

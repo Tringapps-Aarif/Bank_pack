@@ -58,7 +58,7 @@ public class Methods {
                     print.info("Enter the Amount");
                     withdrawAmt = sc1.nextInt();
                     if (withdrawAmt > ist.get(i).currentBalance) {
-                        throw new insufficientBalance();
+                        throw new Insufficientbalance();
                     }
                     else{
                         ist.get(i).currentBalance -= withdrawAmt;

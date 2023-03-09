@@ -13,7 +13,7 @@ public class BankPg {
         n = sc.nextInt();
         Methods call = new Methods();
         call.getName();
-        caseSwitch calling = new caseSwitch();
+        Caseswitch calling = new Caseswitch();
         calling.case1();
     }
 }
