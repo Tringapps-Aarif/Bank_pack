@@ -15,7 +15,6 @@ public class Methods {
     protected String name;
     private int i;
     static ArrayList<Details> ist = new ArrayList<>();
-
     public void getName() {
         int Balance = 0;
         for (i = 0; i < BankPg.n; i++) {
