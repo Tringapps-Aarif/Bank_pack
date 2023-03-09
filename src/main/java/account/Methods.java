@@ -1,6 +1,6 @@
 package account;
 
-import mainpkg.BankPg;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -15,9 +15,9 @@ public class Methods {
     protected String name;
     private int i;
     static ArrayList<Details> ist = new ArrayList<>();
-    public void getName() {
+    public void getName(int n) {
         int balance = 0;
-        for (i = 0; i < BankPg.n; i++) {
+        for (i = 0; i <n; i++) {
             print.info("Enter the name : ");
             name = sc1.nextLine();
             print.info("Enter the account number ; ");
