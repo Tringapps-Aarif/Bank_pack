@@ -4,7 +4,6 @@ import caseswitch.*;
 import account.Methods;
 import java.util.logging.Logger;
 public class BankPg {
-//    public static int n;
     public static void main(String[] args) {
 
         final Logger print = Logger.getLogger("Banking");
