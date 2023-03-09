@@ -1,12 +1,12 @@
 package account;
 
  class Details {
-        protected int AccNo;
+        protected int accnum;
        protected  String nameUser;
      protected int currentBalance;
         Details(int accno,String name,int currentBalance)
         {
-            AccNo=accno;
+            accnum=accno;
             nameUser=name;
             this.currentBalance = currentBalance;
         }

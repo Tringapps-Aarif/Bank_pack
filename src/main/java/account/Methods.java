@@ -16,13 +16,13 @@ public class Methods {
     private int i;
     static ArrayList<Details> ist = new ArrayList<>();
     public void getName() {
-        int Balance = 0;
+        int balance = 0;
         for (i = 0; i < BankPg.n; i++) {
             print.info("Enter the name : ");
             name = sc1.nextLine();
             print.info("Enter the account number ; ");
             accno = sc2.nextInt();
-            Details oo = new Details(accno, name, Balance);
+            Details oo = new Details(accno, name, balance);
             ist.add(oo);
 
         }
@@ -33,13 +33,13 @@ public class Methods {
         print.info("Enter the Account Number : ");
         int num = sc1.nextInt();
         for (i = 0; i < ist.size(); i++) {
-            if (ist.get(i).AccNo == num) {
+            if (ist.get(i).accnum == num) {
                 print.info("Enter the Amount");
                 depositAmt = sc1.nextInt();
                 ist.get(i).currentBalance += depositAmt;
                 print.info("Amount successfully deposited");
                 print.log(Level.INFO, () -> ("Name : "+ist.get(i).nameUser));
-                print.log(Level.INFO, () -> ("Account number : "+ist.get(i).AccNo));
+                print.log(Level.INFO, () -> ("Account number : "+ist.get(i).accnum));
                 print.log(Level.INFO, () -> ("Balance : "+ist.get(i).currentBalance));
                 break;
             } else {
@@ -55,7 +55,7 @@ public class Methods {
             print.info("Enter the Account Number : ");
             int num = sc1.nextInt();
             for (i = 0; i < ist.size(); i++) {
-                if (ist.get(i).AccNo == num) {
+                if (ist.get(i).accnum == num) {
                     print.info("Enter the Amount");
                     withdrawAmt = sc1.nextInt();
                     if (withdrawAmt > ist.get(i).currentBalance) {
@@ -65,7 +65,7 @@ public class Methods {
                         ist.get(i).currentBalance -= withdrawAmt;
                         print.info("Amount successfully withdraw");
                         print.log(Level.INFO, () -> ("Name : "+ist.get(i).nameUser));
-                        print.log(Level.INFO, () -> ("Account number : "+ist.get(i).AccNo));
+                        print.log(Level.INFO, () -> ("Account number : "+ist.get(i).accnum));
                         print.log(Level.INFO, () -> ("Balance : "+ist.get(i).currentBalance));
 
                 }
