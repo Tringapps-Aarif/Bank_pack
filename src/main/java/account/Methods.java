@@ -27,7 +27,6 @@ public class Methods {
 
         }
     }
-
     public void deposit() {
         int depositAmt;
         print.info("Enter the Account Number : ");
